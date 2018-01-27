@@ -27,7 +27,7 @@ public class LogicLatex {
                 System.out.println("q (q)(11):");
                 System.out.println("DELETE PREVIOUS (12):\n");
                 System.out.print("Enter choice here: ");
-                response = sc.nextInt();
+                response = sc.next();
                 System.out.println();
 
                 if (response == 1) {
