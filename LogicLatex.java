@@ -9,9 +9,9 @@ public class LogicLatex {
         int answer = 1;
         while (answer == 1) {
             System.out.println("Welcome to the LaTeX Logical Equation Builder for Discrete Math!\n");
-            int response = -2;
+            String response = "";
 
-            while (response != 0) {
+            while (!"0".equals(response)) {
                 System.out.println("Please choose which symbol you would like to insert into the equation:\n");
                 System.out.println("To exit (0):");
                 System.out.println("Negation (1):");
@@ -30,29 +30,29 @@ public class LogicLatex {
                 response = sc.next();
                 System.out.println();
 
-                if (response == 1) {
+                if (response.equals("1")){
                     equation.add("\\neg ");
-                } else if (response == 2) {
+                } else if (response.equals("2")) {
                     equation.add("\\ \\land\\ ");
-                } else if (response == 3) {
+                } else if (response.equals("3")) {
                     equation.add("\\ \\lor\\ ");
-                } else if (response == 4) {
+                } else if (response.equals("4")) {
                     equation.add(" \\oplus ");
-                } else if (response == 5) {
+                } else if (response.equals("5")) {
                     equation.add(" \\rightarrow\\ ");
-                } else if (response == 6) {
+                } else if (response.equals("6")) {
                     equation.add(" \\leftrightarrow\\ ");
-                } else if (response == 7) {
+                } else if (response.equals("7")) {
                     equation.add(" \\equiv ");
-                } else if (response == 8) {
+                } else if (response.equals("8") || response.equals("(")) {
                     equation.add(" $($");
-                } else if (response == 9) {
+                } else if (response.equals("9") || response.equals(")")) {
                     equation.add("$)$ ");
-                } else if (response == 10) {
+                } else if (response.equals("10") || response.equals("p")) {
                     equation.add("$p$");
-                } else if (response == 11) {
+                } else if (response.equals("11") || response.equals("q")) {
                     equation.add("$q$");
-                } else if (response == 12) {
+                } else if (response == "12") {
                     equation.remove(equation.size() - 1);
                 }
             }
