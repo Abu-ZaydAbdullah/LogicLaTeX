@@ -31,7 +31,8 @@ public class LogicLatex {
     response = sc.next();
     System.out.println();
 
-    if (response.equals("1")) {
+    if (response.equals("0")) {}
+    else if (response.equals("1")) {
      equation.add("\\neg ");
     } else if (response.equals("2")) {
      equation.add("\\ \\land\\ ");
