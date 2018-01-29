@@ -57,7 +57,7 @@ public class LogicLatex {
     } else if (response == "12") {
      equation.remove(equation.size() - 1);
     } else {
-     equation.add(response + "");
+     equation.add("$"+response+"$");
     }
    }
 
