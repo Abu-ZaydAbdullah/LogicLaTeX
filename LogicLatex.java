@@ -8,6 +8,7 @@ public class LogicLatex {
   Scanner sc = new Scanner(System.in);
   int answer = 1;
   while (answer == 1) {
+    equation = new ArrayList < > ();
    System.out.println("Welcome to the LaTeX Logical Equation Builder for Discrete Math!\n");
    String response = "";
 
